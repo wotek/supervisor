@@ -1,0 +1,222 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "6b65d18b16e5e6872ed1194c523db9bc",
+    "packages": [
+        {
+            "name": "indigophp/supervisor",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indigophp/supervisor.git",
+                "reference": "c039678d63633c2605e5902f3ab942f4b6b77433"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indigophp/supervisor/zipball/c039678d63633c2605e5902f3ab942f4b6b77433",
+                "reference": "c039678d63633c2605e5902f3ab942f4b6b77433",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "psr/log": "~1.0",
+                "symfony/options-resolver": "~2.4",
+                "symfony/process": "~2.4"
+            },
+            "require-dev": {
+                "codeception/codeception": "~2.0.0",
+                "codeception/mockery-module": "dev-master",
+                "ext-xmlrpc": "*",
+                "guzzle/guzzle": "~3.9.0",
+                "guzzlehttp/guzzle": "~4.1.0",
+                "zendframework/zend-xmlrpc": "~2.3.0",
+                "zendframework/zendxml": "~1.0.0"
+            },
+            "suggest": {
+                "ext-xmlrpc": "Used by the following connectors: Guzzle, Guzzle3",
+                "guzzle/guzzle": "Guzzle 3 HTTP client",
+                "guzzlehttp/guzzle": "GuzzleHttp 4 HTTP client",
+                "zendframework/zend-xmlrpc": "XmlRpc component from Zend Framework 2",
+                "zendframework/zendxml": "Required by Zend XmlRpc component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Indigo\\Supervisor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "PHP library for Supervisord",
+            "homepage": "https://indigophp.com",
+            "keywords": [
+                "process manager",
+                "supervisor"
+            ],
+            "time": "2014-07-23 21:32:10"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2014-01-18 15:33:09"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/OptionsResolver",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/OptionsResolver.git",
+                "reference": "97b6bdced6f4850afd6eef50d47f117698e76d58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/97b6bdced6f4850afd6eef50d47f117698e76d58",
+                "reference": "97b6bdced6f4850afd6eef50d47f117698e76d58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2014-07-09 09:06:26"
+        },
+        {
+            "name": "symfony/process",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Process",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "ba2c477082cf505c1721ea6e68010bb1fcfaef8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/ba2c477082cf505c1721ea6e68010bb1fcfaef8b",
+                "reference": "ba2c477082cf505c1721ea6e68010bb1fcfaef8b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-14 16:37:29"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "indigophp/supervisor": 0,
+        "phpunit/phpunit": 20
+    },
+    "platform": [],
+    "platform-dev": []
+}

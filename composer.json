@@ -1,0 +1,24 @@
+{
+    "name": "wotek/supervisor",
+    "description": "Supervisor support",
+    "require": {
+        "indigophp/supervisor": "@stable"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wojtek Zalewski",
+            "email": "wojtek@neverbland.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Wtk\\Supervisor\\Tests": "tests/",
+            "Wtk\\Supervisor": "src/"
+        }
+    }
+}
